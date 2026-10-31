@@ -2,13 +2,6 @@
 
 > **"Every Celebration Deserves a Perfect Plan."**  
 > An intelligent, full-stack event planning web application powered by **Google Gemini AI (`gemini-3.8-flash`)**. EventAura architects bespoke concepts, strict budget breakdowns in Indian Rupees (₹ INR), 30-day countdowns, hour-by-hour day schedules, vendor checklists, and curated gastronomy for weddings, milestone birthdays, anniversaries, corporate summits, and community festivals.
-
----
-
-## 🌟 Live Demo
-
-- **Interactive Applet:** [https://ais-pre-bvwvz2zawby7xvzf6rhezx-1000591823797.asia-southeast1.run.app](https://ais-pre-bvwvz2zawby7xvzf6rhezx-1000591823797.asia-southeast1.run.app)
-
 ---
 
 ## 🎯 Key Capabilities & Features
