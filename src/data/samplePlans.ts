@@ -1,0 +1,262 @@
+import { EventPlan } from '../types/event';
+
+export const SAMPLE_PLANS: Record<string, EventPlan> = {
+  wedding: {
+    id: 'sample-wedding-1',
+    createdAt: new Date().toISOString(),
+    formData: {
+      eventType: 'wedding',
+      eventName: 'Aarav & Ananya’s Royal Heritage Wedding',
+      eventDate: '2026-12-18',
+      eventLocation: 'Udaipur, Rajasthan',
+      guestCount: 250,
+      totalBudget: 1500000,
+      eventStyle: 'Luxury',
+      indoorOutdoor: 'Both / Flexible',
+      foodPreferences: 'Royal Rajasthani & Awadhi Pure Veg with Live Chaat & Sweet Counters',
+      additionalRequirements: 'Heritage palace courtyard decor, drone photography, vintage car entry, live shehnai & flutist',
+    },
+    concept: {
+      themeTitle: 'Rajputana Regal: Timeless Haveli Romance',
+      tagline: 'An ode to regal heritage, sacred vows, and starlit royal courtyards.',
+      story: 'Set against carved arches and shimmering water fountains, this celebration synthesizes royal Rajputana majesty with contemporary luxury for 250 cherished guests.',
+      colorPalette: [
+        { name: 'Imperial Gold', hex: '#D4AF37', usage: 'Carved mandap pillars, brass urns, cutlery' },
+        { name: 'Royal Lavender & Iris', hex: '#A78BFA', usage: 'Evening mood lighting, royal upholstery accents' },
+        { name: 'Ivory Pearl', hex: '#FAF7F2', usage: 'Canopy drapes, linen runners, jasmine garlands' },
+        { name: 'Marigold Rust', hex: '#F59E0B', usage: 'Entrance floral cascades, torans, photo lounge' },
+      ],
+      decorationIdeas: [
+        {
+          title: 'Floating Lotus Mandap on Water Courtyard',
+          description: 'A circular mandap suspended over a shallow mirror pool, adorned with 10,000 mogra strands and brass diya stands.',
+          focalArea: 'Main Pheras & Wedding Altar',
+        },
+        {
+          title: 'Grand Rajwada Walkway of 100 Lanterns',
+          description: 'A 60-meter red carpet avenue lined with vintage Moroccan brass lanterns and scented rose petal carpet.',
+          focalArea: 'Guest Entrance & Baraat Path',
+        },
+        {
+          title: 'Royal Jharokha Photo Gallery',
+          description: 'Intricately carved wooden jharokha frames backed with antique mirrors and customized couple monogram neon.',
+          focalArea: 'Cocktail & Memory Lounge',
+        },
+      ],
+      personalizedSuggestions: [
+        'Welcome guests with traditional Rajasthani dhol beats and chilled saffron-infused Thandai in brass matkas.',
+        'Provide customized embroidered mojaris and velvet shawls for elderly guests during the evening pheras.',
+        'Set up a live artisan Lac bangle-maker and block-print souvenir booth for wedding favors.',
+      ],
+    },
+    budget: {
+      totalBudget: 1500000,
+      allocatedTotal: 1500000,
+      summaryNote: 'Allocated for a 250-guest royal wedding with 33% focused on heritage palace hospitality and 27% on royal culinary spreads.',
+      items: [
+        { id: 'b1', category: 'Venue', allocatedAmount: 500000, percentage: 33, description: 'Heritage resort courtyard, pool deck, and banquet with lighting & generator backup.', costSavingTip: 'Book non-weekend dates or negotiate inclusion of 4 complimentary bridal preparation suites.' },
+        { id: 'b2', category: 'Catering', allocatedAmount: 400000, percentage: 27, description: 'Lavish 5-course banquet with 8 live stations, mocktail bar, and traditional sweet halwai counter.', costSavingTip: 'Consolidate live counters to focus on highest-impact specialties (Dal Baati Churma, Jalebi Rabri).' },
+        { id: 'b3', category: 'Decoration', allocatedAmount: 250000, percentage: 17, description: 'Full mandap setup, floral entryway, ambient fairy canopy, table centerpieces, and stage.', costSavingTip: 'Combine local seasonal marigolds and jasmine with reusable warm gold fabrics instead of imported blooms.' },
+        { id: 'b4', category: 'Photography', allocatedAmount: 140000, percentage: 9, description: '2 Candid photographers + 2 cinematic videographers + drone coverage + wedding highlight film.', costSavingTip: 'Book bundled pre-wedding shoot with the same team for a flat 15% discount.' },
+        { id: 'b5', category: 'Entertainment', allocatedAmount: 100000, percentage: 7, description: 'Live Rajasthani folk troupe for welcome, celebrity wedding DJ, and professional Emcee.', costSavingTip: 'Use in-house sound equipment from venue to avoid external PA rental surcharges.' },
+        { id: 'b6', category: 'Invitations', allocatedAmount: 35000, percentage: 2, description: 'Custom illustrated digital video invitation suite + 50 physical velvet keepsake box invites.', costSavingTip: 'Send digital WhatsApp invites with interactive RSVP form for 80% of guests.' },
+        { id: 'b7', category: 'Transportation', allocatedAmount: 40000, percentage: 3, description: 'Decorated vintage open car for groom baraat + 3 shuttle vans for airport-hotel transfers.', costSavingTip: 'Consolidate airport pickups by coordinating arrival batches.' },
+        { id: 'b8', category: 'Miscellaneous', allocatedAmount: 35000, percentage: 2, description: 'Emergency tailor, safety kits, vendor gratuities, licenses, and unforeseen needs.', costSavingTip: 'Designate a trusted family treasurer to approve unexpected on-the-day expenses.' },
+      ],
+    },
+    timeline: {
+      prepTimeline: [
+        {
+          phase: '30 Days Before',
+          tasks: [
+            'Sign final contracts with venue, catering lead, and wedding decorator.',
+            'Confirm final wedding outfits, jewelry security locker, and accessories.',
+            'Distribute digital invitations and monitor RSVP headcount.',
+            'Schedule makeup trials for bride, groom, and mothers.',
+          ],
+        },
+        {
+          phase: '15 Days Before',
+          tasks: [
+            'Approve final mandap elevation diagrams and floral color combinations.',
+            'Hold playlist review with wedding DJ and entry cues with Emcee.',
+            'Confirm airport pickup logistics for outstation guests.',
+            'Finalize gift hampers and return favor packaging.',
+          ],
+        },
+        {
+          phase: '7 Days Before',
+          tasks: [
+            'Submit locked-in guest count to catering head.',
+            'Test sound permissions and silent generator backup connections at venue.',
+            'Assemble bridal emergency survival kit (bobby pins, safety pins, medicines, compact powder).',
+            'Conduct dry run of baraat path and vintage car parking.',
+          ],
+        },
+        {
+          phase: '1-2 Days Before',
+          tasks: [
+            'Inspect mandap construction and sound checks at venue.',
+            'Host rehearsal dinner / sangeet check-in.',
+            'Disburse balance checks / advance payments to primary vendors.',
+            'Ensure bridal party rests and hydrates.',
+          ],
+        },
+      ],
+      daySchedule: [
+        { time: '11:00 AM', title: 'Vendor Arrival & Setup', activity: 'Decorators, sound technicians, and florists begin mandap assembly.', responsible: 'Decor Team Lead' },
+        { time: '02:00 PM', title: 'Bridal & Groom Makeup', activity: 'Stylists arrive for bridal hair, draping, and groom styling in royal suites.', responsible: 'Makeup Artist' },
+        { time: '04:30 PM', title: 'Pre-Wedding Portrait Session', activity: 'Candid golden hour couple shoot across palace courtyards.', responsible: 'Photography Lead' },
+        { time: '05:30 PM', title: 'Baraat Assembly & Welcome', activity: 'Groom arrives in vintage car with dhol; bride’s family offers traditional milni welcome.', responsible: 'Family Hosts & Emcee' },
+        { time: '06:45 PM', title: 'Varmala Ceremony', activity: 'Grand floral garland exchange with cold spark pyro fountains on the stage.', responsible: 'Emcee & Stage Manager' },
+        { time: '07:30 PM', title: 'Dinner Buffet Opens', activity: 'Lavish royal banquet opens with live street counters and dessert pavilions.', responsible: 'Catering Lead' },
+        { time: '09:00 PM', title: 'Sacred Pheras Altar Rituals', activity: 'Traditional Vedic wedding vows around sacred fire at the water mandap.', responsible: 'Priest & Couple' },
+        { time: '11:30 PM', title: 'Vidaai & Farewell Blessings', activity: 'Heartfelt send-off ritual with flower shower and vintage car departure.', responsible: 'Family & Coordinator' },
+      ],
+    },
+    vendorChecklist: [
+      { id: 'v1', category: 'Venue', task: 'Review noise curfew rules and secure sound permission certificate', estimatedCost: 500000, deadline: '30 Days Before', completed: true, notes: 'Outdoor music permitted till 10:00 PM, indoor hall till late' },
+      { id: 'v2', category: 'Catering', task: 'Finalize menu tasting and confirm 8 live interactive stations', estimatedCost: 400000, deadline: '20 Days Before', completed: true, notes: 'Include sugar-free dessert options for seniors' },
+      { id: 'v3', category: 'Decoration', task: 'Approve water-mandap structural safety & floral blueprint', estimatedCost: 250000, deadline: '15 Days Before', completed: false, notes: 'Ensure anti-slip carpeting along water walkways' },
+      { id: 'v4', category: 'Photography', task: 'Provide shot list: grandparents candid moments, varmala aerial shot', estimatedCost: 140000, deadline: '10 Days Before', completed: false, notes: 'Drone operator has DGCA local clearance' },
+      { id: 'v5', category: 'Entertainment', task: 'Lock in live folk musicians and DJ song transitions for couple entry', estimatedCost: 100000, deadline: '7 Days Before', completed: false, notes: 'Entry track: Instrumental Kesariya / Din Shagna Da mix' },
+      { id: 'v6', category: 'Stylist & Makeup', task: 'Confirm bridal makeup schedule and 4 family draping assistants', estimatedCost: 45000, deadline: '12 Days Before', completed: true, notes: 'HD airbrush makeup booked' },
+      { id: 'v7', category: 'Invitations & Favors', task: 'Procure brass diya souvenirs and hand-rolled sweets for return favors', estimatedCost: 35000, deadline: '25 Days Before', completed: true, notes: 'Packed in handcrafted gold-embossed boxes' },
+      { id: 'v8', category: 'Logistics', task: 'Book 3 AC tempo travelers for guest airport transits', estimatedCost: 40000, deadline: '5 Days Before', completed: false, notes: 'Driver contact list shared with guest hospitality desk' },
+    ],
+    recommendations: {
+      foodMenu: {
+        welcomeDrinks: ['Kesar Pista Badam Thandai', 'Royal Rose Cardamom Sharbath', 'Smoked Kokum Mint Spritzer'],
+        appetizers: ['Jodhpuri Paneer Mirchi Vada', 'Truffle Malai Broccoli with mint foam', 'Dahi ke Sholay on Crisp Papad', 'Mini Dal Baati bites with garlic chutney'],
+        mainCourse: ['Paneer Lababdar in Clay Handi', 'Authentic Rajasthani Gatta Curry', 'Dal Bukhara slow-cooked 24 hours', 'Subz Awadhi Biryani with Burani Raita', 'Artisan Missi Roti & Laccha Parathas'],
+        desserts: ['Hot Malpua with Kesar Rabdi', 'Baked Ghevar with Pistachio Cream', 'Moong Dal Halwa with silver leaf', 'Artisan Nitrogen Kulfi Bar'],
+        signatureSpecial: 'Royal Street Chaat Pavilion (Banarasi Tamatar Chaat, Palak Patta Chaat, Golgappe with 5 artisanal waters)',
+      },
+      gamesAndActivities: [
+        { name: 'The Royal Couple Sangeet Trivia', targetAudience: 'All Guests', description: 'Interactive mobile phone quiz with humorous questions about the couple’s dating stories.' },
+        { name: 'Live Bangles & Turban Tying Station', targetAudience: 'Family & Friends', description: 'Guests get authentic colorful Mewari safas (turbans) tied and handcrafted glass bangles sized on-site.' },
+        { name: 'Retro Audio Guestbook Telephone', targetAudience: 'Everyone', description: 'A vintage ivory rotary telephone where guests leave voicemail blessings and hilarious late-night advice.' },
+      ],
+      entertainmentIdeas: [
+        { title: 'Manganiyar Folk Fusion Ensemble', description: 'A 5-piece Rajasthani folk ensemble playing khartal, kamayacha, and dholak fused with acoustic strings during dinner.', vibe: 'Enchanting & Soulful' },
+        { title: 'Royal Cold Pyro Grand Entry', description: 'Sparks cascade safely from pillars as couple walks down the floral carpet under a phoolon ki chaadar.', vibe: 'Cinematic & Breathtaking' },
+        { title: 'Celebrity Wedding DJ & Percussionist', description: 'High-energy Bollywood and Punjabi wedding hits accompanied by a live LED dhol player on the dance floor.', vibe: 'Electric & Joyous' },
+      ],
+      guestExperience: [
+        { touchpoint: 'Arrival Welcome', idea: 'Traditional Aarti, rosewater mist, and fragrant mogra gajras gifted to each guest at the haveli gateway.' },
+        { touchpoint: 'Comfort Station', idea: 'A hospitality lounge with comfy flip-flops, safety pins, hair spray, cooling facial mist, and refreshing electrolyte drinks.' },
+        { touchpoint: 'Memories to Go', idea: 'Live instant vintage polaroids tucked into customized gold-stamped card jackets.' },
+      ],
+      costSavingSuggestions: [
+        { area: 'Floral Decor', suggestion: 'Use lush seasonal greenery and marigolds for high-volume walkway arches, reserving exotic orchids strictly for the photo backdrop.', potentialSavings: 45000 },
+        { area: 'Live Counters', suggestion: 'Limit dinner counters to 8 highly curated signature stations instead of 16 overlapping options to eliminate food wastage.', potentialSavings: 50000 },
+        { area: 'Invitations', suggestion: 'Design an animated interactive WhatsApp wedding portal, printing physical cards only for elderly relatives.', potentialSavings: 25000 },
+      ],
+    },
+    aiNotes: 'Intelligently configured for a grand heritage celebration in Rajasthan within ₹15,00,000.',
+  },
+  birthday: {
+    id: 'sample-birthday-1',
+    createdAt: new Date().toISOString(),
+    formData: {
+      eventType: 'birthday',
+      eventName: 'Sahil’s 30th Rooftop Starlight Soirée',
+      eventDate: '2026-11-20',
+      eventLocation: 'Indiranagar, Bengaluru',
+      guestCount: 60,
+      totalBudget: 180000,
+      eventStyle: 'Modern',
+      indoorOutdoor: 'Outdoor',
+      foodPreferences: 'Continental Tapas, Gourmet Sliders, Wood-fired Pizzas & Artisanal Cocktails/Mocktails',
+      additionalRequirements: 'Acoustic indie band, neon sign backdrop, retro gaming lounge, Polaroid photo wall',
+    },
+    concept: {
+      themeTitle: 'Neon Twilight & Boho Loft',
+      tagline: 'An intimate, high-vibe rooftop gathering under fairy lit skies.',
+      story: 'Celebrating the milestone 30th year with close friends atop an open Bengaluru terrace filled with indie melodies, artisanal tapas, and glowing neon ambiance.',
+      colorPalette: [
+        { name: 'Electric Lilac', hex: '#C084FC', usage: 'Custom neon typography, drink garnishes' },
+        { name: 'Warm Amber Gold', hex: '#F59E0B', usage: 'Edison bulb strings, wooden pallet tables' },
+        { name: 'Smoky Charcoal', hex: '#1E293B', usage: 'Lounge seating, canvas backdrop' },
+        { name: 'Sage Green', hex: '#84CC16', usage: 'Potted monstera plants, hanging macrame foliage' },
+      ],
+      decorationIdeas: [
+        { title: 'Bespoke Neon "Dirty Thirty" Glow Wall', description: 'Smoked acrylic wall with custom neon quote, eucalyptus garland, and velvet emerald sofa.', focalArea: 'Main Photo Corner' },
+        { title: 'Canopy of 500 Warm Edison Bulbs', description: 'Overhead criss-crossed incandescent string lights creating a starry bistro ambiance.', focalArea: 'Rooftop Dining & Bar' },
+        { title: 'Low-Seating Boho Rug Lounge', description: 'Persian-style rugs, Moroccan poufs, floor cushions, and wooden pallet coffee tables with candles.', focalArea: 'Chillout & Acoustic Zone' },
+      ],
+      personalizedSuggestions: [
+        'Curate a custom signature cocktail named after the host ("The Sahil 1996 Old Fashioned").',
+        'Create a "Roast & Toast" microphone segment where 4 closest friends share funny 2-minute memories.',
+        'Hand out customized retro enamel pins or engraved bottle openers as party favors.',
+      ],
+    },
+    budget: {
+      totalBudget: 180000,
+      allocatedTotal: 180000,
+      summaryNote: 'Tailored for 60 guests with a focus on gourmet tapas, premium craft beverages, and dynamic rooftop ambiance.',
+      items: [
+        { id: 'b1', category: 'Venue', allocatedAmount: 50000, percentage: 28, description: 'Rooftop lounge buyout in Indiranagar with bar infrastructure and sunset terrace view.', costSavingTip: 'Book a Thursday or Sunday evening for a 20% lower minimum venue spend.' },
+        { id: 'b2', category: 'Catering', allocatedAmount: 65000, percentage: 36, description: 'Floating tapas, gourmet sliders, wood-fired pizzas, mocktail mixers, and bespoke 3-tier cake.', costSavingTip: 'Opt for hearty pass-around tapas which guests prefer over a rigid sit-down buffet.' },
+        { id: 'b3', category: 'Decoration', allocatedAmount: 25000, percentage: 14, description: 'Neon signage, Edison light canopy, macrame planters, table candles, and balloon arch.', costSavingTip: 'Rent neon signs and foliage potted plants from local styling agencies.' },
+        { id: 'b4', category: 'Photography', allocatedAmount: 18000, percentage: 10, description: 'Candid lifestyle photographer for 4 hours + 200 edited high-res digital shots.', costSavingTip: 'Hire a rising freelance photographer with strong street/lifestyle portfolio.' },
+        { id: 'b5', category: 'Entertainment', allocatedAmount: 12000, percentage: 7, description: 'Live 2-piece acoustic indie duo (vocals + guitar/cajon) followed by curated Spotify playlist.', costSavingTip: 'Acoustic duo for 2 hours during sunset saves heavily compared to a full 5-piece rock band.' },
+        { id: 'b6', category: 'Invitations', allocatedAmount: 2000, percentage: 1, description: 'Custom digital motion video invite sent via WhatsApp with RSVP tracking link.', costSavingTip: 'Use digital invitations to eliminate printing and courier costs completely.' },
+        { id: 'b7', category: 'Transportation', allocatedAmount: 3000, percentage: 2, description: 'Reserved Uber rides / promo codes for designated drivers and late-night guest transit.', costSavingTip: 'Share a single event discount code via ride-sharing app.' },
+        { id: 'b8', category: 'Miscellaneous', allocatedAmount: 5000, percentage: 2, description: 'Ice supplies, cake sparklers, emergency sound cables, and venue staff tips.', costSavingTip: 'Keep a small cash reserve for on-the-spot tips and logistics.' },
+      ],
+    },
+    timeline: {
+      prepTimeline: [
+        { phase: '30 Days Before', tasks: ['Lock rooftop lounge deposit.', 'Confirm guest headcount on group chat.', 'Book acoustic musicians.'] },
+        { phase: '15 Days Before', tasks: ['Order custom neon sign rental.', 'Finalize menu tasting with venue chef.', 'Order specialty artisan cake.'] },
+        { phase: '7 Days Before', tasks: ['Create collaborative party music playlist.', 'Procure Polaroid camera & film packs.', 'Send calendar reminder to guests.'] },
+        { phase: '1-2 Days Before', tasks: ['Check rooftop weather forecast & tent backup.', 'Pick up party props and cake.', 'Confirm arrival times with photographer.'] },
+      ],
+      daySchedule: [
+        { time: '04:30 PM', title: 'Setup & Soundcheck', activity: 'Acoustic duo tunes equipment; florist & neon lights turned on.', responsible: 'Host & Decor Team' },
+        { time: '06:00 PM', title: 'Sunset Welcome & Cocktails', activity: 'Guests arrive to acoustic indie chill tracks; signature drinks served.', responsible: 'Bar Lead' },
+        { time: '07:30 PM', title: 'Roast & Toast Session', activity: 'Friends share funny stories; birthday video reel plays on projector.', responsible: 'Host & Friends' },
+        { time: '08:30 PM', title: 'Cake Cutting & Sparklers', activity: 'Cutting the Belgian chocolate truffle cake with handheld ice fountains.', responsible: 'All Guests' },
+        { time: '09:00 PM', title: 'Wood-fired Pizza & Tapas Dinner', activity: 'Fresh hot gourmet pizzas and sliders served from live counter.', responsible: 'Kitchen Chef' },
+        { time: '10:00 PM', title: 'Late-Night Dance & Polaroid Wall', activity: 'Upbeat funk and dance tunes; guests pin instant photos on the wire wall.', responsible: 'Photographer & Guests' },
+      ],
+    },
+    vendorChecklist: [
+      { id: 'v1', category: 'Venue', task: 'Confirm terrace sound permit and rain-proof awning backup', estimatedCost: 50000, deadline: '20 Days Before', completed: true, notes: 'Outdoor sound allowed till 10:30 PM' },
+      { id: 'v2', category: 'Catering', task: 'Taste test wood-fired sourdough pizzas & sliders', estimatedCost: 65000, deadline: '10 Days Before', completed: true, notes: 'Include vegan cheese option for 4 guests' },
+      { id: 'v3', category: 'Decoration', task: 'Confirm neon sign phrase: "Dirty Thirty & Thriving"', estimatedCost: 25000, deadline: '7 Days Before', completed: false, notes: 'Warm white and lavender LED neon tube' },
+      { id: 'v4', category: 'Photography', task: 'Brief photographer on candid golden-hour group portraits', estimatedCost: 18000, deadline: '5 Days Before', completed: false, notes: 'Deliver 10 quick edits within 24 hours for Instagram' },
+      { id: 'v5', category: 'Entertainment', task: 'Share favorite acoustic indie cover songs with musicians', estimatedCost: 12000, deadline: '3 Days Before', completed: false, notes: 'Coldplay, Prateek Kuhad, and acoustic pop' },
+    ],
+    recommendations: {
+      foodMenu: {
+        welcomeDrinks: ['Passionfruit Thyme Spritz', 'Smoked Espresso Tonic', 'Cucumber Basil Cooler'],
+        appetizers: ['Truffle Parmesan Hand-cut Fries', 'Spicy Chipotle Chicken Sliders / Pulled Jackfruit Sliders', 'Peri Peri Paneer Skewers', 'Avocado & Tomato Bruschetta with balsamic reduction'],
+        mainCourse: ['Artisanal Wood-fired Margherita & Quattro Formaggi Pizzas', 'Penne Rosa with sun-dried tomatoes', 'Herb Grilled Sourdough Paninis'],
+        desserts: ['Belgian Dark Chocolate Sea-Salt Cake', 'Mini Churro bites with dulce de leche', 'Classic Tiramisu Cups'],
+        signatureSpecial: 'Interactive DIY Gourmet Slider & Nacho Bar with 6 house-made dips',
+      },
+      gamesAndActivities: [
+        { name: 'Who Knows Sahil Best? (Kahoot)', targetAudience: 'All Friends', description: 'Fast-paced smartphone trivia game with ridiculous high school photos.' },
+        { name: 'Polaroid Memory Clothesline', targetAudience: 'Everyone', description: 'Guests snap instant photos with props and clip them onto fairy-light strings with handwritten notes.' },
+        { name: 'Retro Giant Jenga & Foosball', targetAudience: 'Casual Hangout', description: 'Giant wooden blocks placed on the terrace lounge for friendly rivalries.' },
+      ],
+      entertainmentIdeas: [
+        { title: 'Acoustic Sunset Guitar Duo', description: 'Chill indie songs during sunset cocktail hour creating an effortless bohemian cafe vibe.', vibe: 'Mellow & Chic' },
+        { title: 'Silent Disco After-Hours', description: 'Wireless glowing headphones allowing guests to dance till 1:00 AM without violating neighborhood noise caps.', vibe: 'Modern & Electric' },
+        { title: 'Custom Cocktail Alchemy', description: 'A flair bartender serving personalized smoke-infused drinks named after inside jokes.', vibe: 'Sophisticated & Fun' },
+      ],
+      guestExperience: [
+        { touchpoint: 'Entrance Greeting', idea: 'A personalized welcome badge with funny nickname and a welcome shot.' },
+        { touchpoint: 'Photo Memento', idea: 'A custom photo frame magnet to take their favorite Polaroid home.' },
+        { touchpoint: 'Midnight Munchies', idea: 'Warm chocolate chip cookies handed out as guests head home.' },
+      ],
+      costSavingSuggestions: [
+        { area: 'Beverage & Bar', suggestion: 'Curate 2 signature cocktails plus craft beer rather than maintaining a full unrestricted open bar.', potentialSavings: 15000 },
+        { area: 'Lighting & Decor', suggestion: 'Use warm fairy light strings and potted rental plants to fill volume instead of single-use cut flowers.', potentialSavings: 8000 },
+      ],
+    },
+    aiNotes: 'Engineered for a stylish rooftop birthday experience in Bengaluru within ₹1,80,000.',
+  },
+};

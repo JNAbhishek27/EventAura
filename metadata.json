@@ -1,0 +1,6 @@
+{
+  "name": "EventAura – Your Celebration, Intelligently Planned.",
+  "description": "Smart celebration planner powered by Gemini AI. Organize weddings, birthdays, anniversaries, corporate, and community events with tailored budgets, timelines, and vendor checklists.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
